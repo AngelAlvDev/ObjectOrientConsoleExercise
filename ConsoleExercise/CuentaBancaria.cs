@@ -51,7 +51,7 @@ namespace ConsoleExercise
 
         public void estado()
         {
-            Console.WriteLine("Numero de cuenta: " + this.getNumCuenta + "\tTitular de la cuenta: " + )
+            Console.WriteLine("Numero de cuenta: " + this.getNumCuenta() + "\tTitular de la cuenta: " + this.getNombre() + "\tSaldo de la cuenta: " + this.getSaldo() + "\tTipo de interés de la cuenta: " + this.getTipoInteres());
         }
 
     }
