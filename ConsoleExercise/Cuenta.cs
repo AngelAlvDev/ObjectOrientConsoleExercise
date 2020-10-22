@@ -6,17 +6,21 @@ using System.Threading.Tasks;
 
 namespace ConsoleExercise
 {
-    class CuentaBancaria
+    class Cuenta
     {
         private String numCuenta, nombre;
         private Double saldo, tipoInteres;
 
-        public CuentaBancaria(string numCuenta, double saldo, double tipoInteres, string nomCliente)
+        public Cuenta(string numCuenta, double saldo, double tipoInteres, string nomCliente)
         {
             this.setNumCuenta(numCuenta);
             this.setSaldo(saldo);
             this.setTipoInteres(tipoInteres);
             this.setNombre(nomCliente);
+        }
+
+        public Cuenta()
+        {
         }
 
         public String getNumCuenta() {
