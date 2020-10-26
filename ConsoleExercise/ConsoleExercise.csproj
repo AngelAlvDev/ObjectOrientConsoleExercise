@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="CuentaAhorro.cs" />
     <Compile Include="Cuenta.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="OrientacionObjetosConsola.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

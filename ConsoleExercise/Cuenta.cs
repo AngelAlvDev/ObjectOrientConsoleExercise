@@ -13,10 +13,10 @@ namespace ConsoleExercise
 
         public Cuenta(string numCuenta, double saldo, double tipoInteres, string nomCliente)
         {
-            this.setNumCuenta(numCuenta);
-            this.setSaldo(saldo);
-            this.setTipoInteres(tipoInteres);
-            this.setNombre(nomCliente);
+            this.SetNumCuenta(numCuenta);
+            this.SetSaldo(saldo);
+            this.SetTipoInteres(tipoInteres);
+            this.SetNombre(nomCliente);
         }
 
         public Cuenta()
@@ -55,8 +55,9 @@ namespace ConsoleExercise
 
         public virtual void Estado()
         {
-            Console.WriteLine("Numero de cuenta: " + this.GetNumCuenta() + "\tTitular de la cuenta: " + this.GetNombre() + "\tSaldo de la cuenta: " + this.GetSaldo() + "\tTipo de interés de la cuenta: " + this.GetTipoInteres());
+            Console.WriteLine("Numero de cuenta: " + this.GetNumCuenta() + 
+                "\tTitular de la cuenta: " + this.GetNombre() + "\tSaldo de la cuenta: " 
+                + this.GetSaldo() + "\tTipo de interés de la cuenta: " + this.GetTipoInteres());
         }
-
     }
 }

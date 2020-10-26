@@ -14,9 +14,13 @@ namespace ConsoleExercise
         {
         }
 
-        public CuentaAhorro(double cuotaMantenimiento)
+        public CuentaAhorro(string numCuenta, double saldo, double tipoInteres, string nombre, double cuotaMantenimiento)
         {
-            this.cuotaMantenimiento = cuotaMantenimiento;
+            this.SetNumCuenta(numCuenta);
+            this.SetSaldo(saldo);
+            this.SetTipoInteres(tipoInteres);
+            this.SetNombre(nombre);
+            this.SetCuotaMantenimiento(cuotaMantenimiento);
         }
         public void SetCuotaMantenimiento(double cuotaMantenimiento)
         {
@@ -29,7 +33,10 @@ namespace ConsoleExercise
 
         public override void Estado()
         {
-            Console.WriteLine("Numero de cuenta: " + this.GetNumCuenta() + "\tTitular de la cuenta: " + this.GetNombre() + "\tSaldo de la cuenta: " + this.GetSaldo() + "\tTipo de interés de la cuenta: " + this.GetTipoInteres() + "\tCuota de mantenimiento; " + this.GetCuotaMantenimiento());
+            Console.WriteLine("Numero de cuenta: " + this.GetNumCuenta() + 
+                "\tTitular de la cuenta: " + this.GetNombre() + "\tSaldo de la cuenta: " 
+                + this.GetSaldo() + "\tTipo de interés de la cuenta: " + this.GetTipoInteres() + 
+                "\tCuota de mantenimiento: " + this.GetCuotaMantenimiento());
         }
     }
 }
