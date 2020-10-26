@@ -23,39 +23,39 @@ namespace ConsoleExercise
         {
         }
 
-        public String getNumCuenta() {
+        public String GetNumCuenta() {
             return this.numCuenta;
         }
-        public Double getSaldo() {
+        public Double GetSaldo() {
             return this.saldo;
         }
-        public Double getTipoInteres() { 
+        public Double GetTipoInteres() { 
             return this.tipoInteres;
         }
-        public String getNombre() {
+        public String GetNombre() {
             return this.nombre;
         }
 
-        public void setNumCuenta(String numCuenta)
+        public void SetNumCuenta(String numCuenta)
         {
             this.numCuenta = numCuenta;
         }
-        public void setSaldo(Double saldo)
+        public void SetSaldo(Double saldo)
         {
             this.saldo = saldo;
         }
-        public void setTipoInteres(Double tipoInteres)
+        public void SetTipoInteres(Double tipoInteres)
         {
             this.tipoInteres = tipoInteres;
         }
-        public void setNombre(String nomCliente)
+        public void SetNombre(String nomCliente)
         {
             this.nombre = nomCliente;
         }
 
-        public void estado()
+        public virtual void Estado()
         {
-            Console.WriteLine("Numero de cuenta: " + this.getNumCuenta() + "\tTitular de la cuenta: " + this.getNombre() + "\tSaldo de la cuenta: " + this.getSaldo() + "\tTipo de interés de la cuenta: " + this.getTipoInteres());
+            Console.WriteLine("Numero de cuenta: " + this.GetNumCuenta() + "\tTitular de la cuenta: " + this.GetNombre() + "\tSaldo de la cuenta: " + this.GetSaldo() + "\tTipo de interés de la cuenta: " + this.GetTipoInteres());
         }
 
     }

@@ -18,11 +18,18 @@ namespace ConsoleExercise
         {
             this.cuotaMantenimiento = cuotaMantenimiento;
         }
-        public void setCuotaMantenimiento(double cuotaMantenimiento)
+        public void SetCuotaMantenimiento(double cuotaMantenimiento)
         {
             this.cuotaMantenimiento = cuotaMantenimiento;
         }
+        public Double GetCuotaMantenimiento()
+        {
+            return this.cuotaMantenimiento;
+        }
 
-        public
+        public override void Estado()
+        {
+            Console.WriteLine("Numero de cuenta: " + this.GetNumCuenta() + "\tTitular de la cuenta: " + this.GetNombre() + "\tSaldo de la cuenta: " + this.GetSaldo() + "\tTipo de interés de la cuenta: " + this.GetTipoInteres() + "\tCuota de mantenimiento; " + this.GetCuotaMantenimiento());
+        }
     }
 }
