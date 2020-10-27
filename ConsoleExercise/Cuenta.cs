@@ -56,8 +56,8 @@ namespace ConsoleExercise
         public virtual void Estado()
         {
             Console.WriteLine("Numero de cuenta: " + this.GetNumCuenta() + 
-                "\tTitular de la cuenta: " + this.GetNombre() + "\tSaldo de la cuenta: " 
-                + this.GetSaldo() + "\tTipo de interés de la cuenta: " + this.GetTipoInteres());
+                "\nTitular de la cuenta: " + this.GetNombre() + "\nSaldo de la cuenta: " 
+                + this.GetSaldo() + "\nTipo de interés de la cuenta: " + this.GetTipoInteres());
         }
     }
 }
